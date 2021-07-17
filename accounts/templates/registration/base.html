@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>AUTH</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" href="{% static 'vendor/css/bootstrap.min.css' %}"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+{% endblock head %}
+{% block body %}
+
+
+    <div class="page-wrapper">
+        <header>
+            <div class="title">DEMO</div>
+            <div class="nav"><i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle"
+                                                                                aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i></div>
+        </header>
+        {% block form %}
+        {% endblock form %}
+    </div>
+    <script src="{% static 'vendor/js/jquery.min.js' %}"></script>
+{% endblock body %}
+{% block customscript %}
+
+{% endblock %}
+
